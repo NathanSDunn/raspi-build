@@ -39,3 +39,4 @@ git clone --depth=0 git://github.com/petrockblog/RetroPie-Setup.git
 cd RetroPie-Setup
 chmod +x retropie_setup.sh
 sudo ./retropie_setup.sh
+cd ..
