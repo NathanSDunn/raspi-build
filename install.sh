@@ -6,9 +6,10 @@
 # 
 #  Raspi-config homepage: https://github.com/NathanSDunn/Raspi-Shell
 sudo chmod 775 *.sh
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get install -y git-core git dialog locate ntpdate
+#TODO checks for last update/upgrade
+#sudo apt-get update
+#sudo apt-get upgrade -y
+sudo apt-get install -y git-core git gitk dialog locate ntpdate
 
 #update locate search database
 #sudo updatedb
@@ -25,5 +26,5 @@ sudo rpi-update
 
 #create a public/private rsa key pair
 #@todo check if file exists
-mkdir ~/.ssh
-ssh-keygen -f ~/.ssh/id_rsa
+#mkdir ~/.ssh
+#ssh-keygen -f ~/.ssh/id_rsa
