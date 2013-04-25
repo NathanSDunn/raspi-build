@@ -1,5 +1,4 @@
-Raspi-Shell
-===========
+#Raspi-Shell
 
 ##Raspberry Pi Quickstart installation - Raspbian (Windows)
 1. Download the most recent Raspbian image from [RaspberryPi.org](http://www.raspberrypi.org/downloads)
@@ -10,16 +9,15 @@ Raspi-Shell
 6. Run `ifconfig` on your pi to get the IP (something like `inet addr:192.168.1.220`) and MAC address (something like `HWaddr 00:14:6c:61:37:61`) assigned to your network interface (`eth0` for ethernet, `wlan0` for wi-fi). You can then ssh to your pi by connecting to it's IP address on your local network, or better yet setting a static IP in your router to assign an IP of your choice  
 
 ##Set up your windows machine to remotely connect to your pi
-1. Install PuTTY
-2. Install Xming
+1. [Download](http://the.earth.li/~sgtatham/putty/latest/x86/putty-0.62-installer.exe) and install [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
+2. [Download](http://sourceforge.net/projects/xming/files/latest/download) and install [Xming](http://www.straightrunning.com/XmingNotes/)
 3. Load up PuTTY and enter pi@[Your Pi's IP Address]` into the "HostName (or IP address)".
-4. Set up X11 forwarding in PuTTY by following this guide.
+4. Set up X11 forwarding in PuTTY by following [this guide](http://www.math.umn.edu/systems_guide/putty_xwin32.html).
 5. Save your connection profile and "Open" the connection
-6. Optionally start the Raspbian window manager with `lxsession` once logged in to your Pi.
+6. *Optionally* start the Raspbian window manager with `lxsession` once logged in to your Pi.
 
 ##Shell scripts for configuring the RaspberryPi
-
-the `install.sh` script will load your pi with a few handy tools useful for working with the other scripts, update your firmware, and create an rsa key pair for connecting to other machines. It can be run by entering the following commands.
+The `install.sh` script will load your Pi with a few handy tools useful for working with the other scripts, update your firmware, and create an RSA key pair for connecting to other machines. It can be run by entering the following commands.
 
     sudo apt-get install -y git-core
     git clone --depth=0 https://github.com/NathanSDunn/Raspi-Shell.git

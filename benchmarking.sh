@@ -17,3 +17,4 @@ sudo apt-get install -y gcc
 git clone --depth=0 git://github.com/bag-man/pistress.git
 cd pistress
 gcc pistress.c
+cd ..
