@@ -8,10 +8,12 @@
 sudo chmod 775 *.sh
 sudo apt-get update
 sudo apt-get upgrade -y
-supt apt-get install -y git-core git dialog
+sudo apt-get install -y git-core git dialog locate ntpdate
+
+#update locate search database
+#sudo updatedb
 
 #update time settings
-sudo apt-get install ntpdate
 sudo ntpdate -u ntp.ubuntu.com
 
 # trust GitHub's SSL certificates
@@ -20,3 +22,8 @@ sudo apt-get install ca-certificates
 # Hexxeh Firmware updates
 sudo wget http://goo.gl/1BOfJ -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
 sudo rpi-update
+
+#create a public/private rsa key pair
+#@todo check if file exists
+mkdir ~/.ssh
+ssh-keygen -f ~/.ssh/id_rsa
