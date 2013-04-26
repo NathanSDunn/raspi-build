@@ -19,7 +19,12 @@
 * Boot up your favorite version of Linux (Inside a virtual machine is fine if you have an external SD card reader) and follow the [install guide](http://wiki.openelec.tv/index.php?title=Installing_OpenELEC_on_Raspberry_Pi#Creating_the_SD_Card)
 * Alternatively (easier) use [BerryBoot](http://www.berryterminal.com/doku.php/berryboot) to create a multi-boot SD card and use the supplied open elec image
 
-3. Insert the card into your Pi, connect it to your TV or monitor via HDMI, plug in a keyboard, connect it to the internet via ethernet or a wi-fi dongle, and boot it up. *Note: for maximum performance you should connect any USB devices to your Pi via a powered USB hub.*
+3. Insert the card into your Pi, connect it to your TV or monitor via HDMI, plug in a keyboard, connect it to the internet via ethernet or a wi-fi dongle, and boot it up. *Note: for maximum performance you should connect any USB devices to your Pi via a powered USB hub.
+4. Go to the rightmost menu (settings) and select the OpenELEC submenu
+5. Configure your Pi as below
+* SYSTEM - turn on automatic update
+* NETWORK - turn on WLAN and wlan0 for wi-fi (or leave it as eth0 for ethernet) and configure a static IP for your Pi and set it under network settings. Set your router as gateway and primary DNS, 8.8.8.8 as secondary DNS, and 8.8.4.4 as teritary DNS. Fill in the SSID, security method (usually WPA2), and password
+* SERVICES - turn on samba, start ssh at boot, start crond at boot
 4. Log in with 
 
      `username:root` and
