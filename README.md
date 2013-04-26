@@ -15,24 +15,21 @@
 
 ###OpenELEC XBMC/HTPC personal media centre (Windows)
 1. Download the most recent OpenELEC image from [OpenELEC](http://openelec.tv/get-openelec/download/viewcategory/10-raspberry-pi-builds) or an XBMC media centre
-2. Install the image with one of the following options .*Note: for best results use a SanDisk 2,4,8, or 16 GB SDHC Flash card (Class 6 recommended for higher random read/write speeds - see [this article](http://www.ardamis.com/2012/07/18/finding-a-fast-sd-card-for-the-raspberry-pi/) on Raspi SD card [benchmarks](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=63&t=4076&start=75))*
-* Boot up your favorite version of Linux (Inside a virtual machine is fine if you have an external SD card reader) and follow the [install guide](http://wiki.openelec.tv/index.php?title=Installing_OpenELEC_on_Raspberry_Pi#Creating_the_SD_Card)
-* Alternatively (easier) use [BerryBoot](http://www.berryterminal.com/doku.php/berryboot) to create a multi-boot SD card and use the supplied open elec image
+2. Install the image with one of the following options .Note: for best results use a SanDisk 2,4,8, or 16 GB SDHC Flash card (Class 6 recommended for higher random read/write speeds - see [this article](http://www.ardamis.com/2012/07/18/finding-a-fast-sd-card-for-the-raspberry-pi/) on Raspi SD card [benchmarks](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=63&t=4076&start=75))
+3. (Option 1) Boot up your favorite version of Linux (Inside a virtual machine is fine if you have an external SD card reader) and follow the [install guide](http://wiki.openelec.tv/index.php?title=Installing_OpenELEC_on_Raspberry_Pi#Creating_the_SD_Card)
+4. (Option 2) Alternatively (easier) use [BerryBoot](http://www.berryterminal.com/doku.php/berryboot) to create a multi-boot SD card and use the supplied OpenELEC image
 
 3. Insert the card into your Pi, connect it to your TV or monitor via HDMI, plug in a keyboard, connect it to the internet via ethernet or a wi-fi dongle, and boot it up. *Note: for maximum performance you should connect any USB devices to your Pi via a powered USB hub.
-4. Go to the rightmost menu (settings) and select the OpenELEC submenu
-5. Configure your Pi as below
-* SYSTEM - turn on automatic update
-* NETWORK - turn on WLAN and wlan0 for wi-fi (or leave it as eth0 for ethernet) and configure a static IP for your Pi and set it under network settings. Set your router as gateway and primary DNS, 8.8.8.8 as secondary DNS, and 8.8.4.4 as teritary DNS. Fill in the SSID, security method (usually WPA2), and password
-* SERVICES - turn on samba, start ssh at boot, start crond at boot
-4. Log in with 
+4. Go to the rightmost menu (settings) and select the OpenELEC submenu, configuring as follows
+5. SYSTEM - turn on automatic update
+6. NETWORK - turn on WLAN and wlan0 for wi-fi (or leave it as eth0 for ethernet) and configure a static IP for your Pi and set it under network settings. Set your router as gateway and primary DNS, 8.8.8.8 as secondary DNS, and 8.8.4.4 as teritary DNS. Fill in the SSID, security method (usually WPA2), and password
+7. SERVICES - turn on samba, start ssh at boot, start crond at boot
+8. SSH to your Pi and log in with 
 
      `username:root` and
      `password:openelec`
 
-5. Use the install interface to turn on `ssh`, `expand_rootfs`, and turn off `boot_behaviour` show desktop on boot (select no - dont worry you can boot into the gui by typing `startx` later if you want to use it directly)
-6. Run `ifconfig` on your pi to get the IP (something like `inet addr:192.168.1.220`) and MAC address (something like `HWaddr 00:14:6c:61:37:61`) assigned to your network interface (`eth0` for ethernet, `wlan0` for wi-fi). You can then ssh to your pi by connecting to it's IP address on your local network, or better yet setting a static IP in your router to assign an IP of your choice  
-http://wiki.openelec.tv/index.php?title=Installing_OpenELEC_on_Raspberry_Pi
+9. Note: You can also connect to your Pi over the windows network by typing `\\[Your Pi's IP Address]\` into the explorer bar.
 
 ##Set up your windows machine to remotely connect to your pi
 1. [Download](http://the.earth.li/~sgtatham/putty/latest/x86/putty-0.62-installer.exe) and install [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
