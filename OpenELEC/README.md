@@ -3,13 +3,10 @@
 ##Raspberry Pi Quickstart installation
 
 ###OpenELEC XBMC/HTPC personal media centre (Windows)
-1. Download the most recent OpenELEC image from [OpenELEC](http://openelec.tv/get-openelec/download/viewcategory/10-raspberry-pi-builds) or an XBMC media centre
-2. Install the image with one of the following options .Note: for best results use a SanDisk 2,4,8, or 16 GB SDHC Flash card (Class 6 recommended for higher random read/write speeds - see [this article](http://www.ardamis.com/2012/07/18/finding-a-fast-sd-card-for-the-raspberry-pi/) on Raspi SD card [benchmarks](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=63&t=4076&start=75))
-3. (Option 1) Boot up your favorite version of Linux (Inside a virtual machine is fine if you have an external SD card reader) and follow the [install guide](http://wiki.openelec.tv/index.php?title=Installing_OpenELEC_on_Raspberry_Pi#Creating_the_SD_Card)
-4. (Option 2) Alternatively (easier) use [BerryBoot](http://www.berryterminal.com/doku.php/berryboot) to create a multi-boot SD card and use the supplied OpenELEC image
-
+1. Download [BerryBoot](http://www.berryterminal.com/doku.php/berryboot) and copy the files on to a FAT32 formatted SanDisk 2,4,8, or 16 GB SDHC Flash card (Class 6 recommended for higher random read/write speeds - see [this article](http://www.ardamis.com/2012/07/18/finding-a-fast-sd-card-for-the-raspberry-pi/) on Raspi SD card [benchmarks](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=63&t=4076&start=75))
 3. Insert the card into your Pi, connect it to your TV or monitor via HDMI, plug in a keyboard, connect it to the internet via ethernet or a wi-fi dongle, and boot it up. *Note: for maximum performance you should connect any USB devices to your Pi via a powered USB hub.
-4. Go to the rightmost menu (settings) and select the OpenELEC submenu, configuring as follows
+3. Configure BerryBoot (Disable overscan=0 for TVs) and select OpenELEC when prompted to install an image. Once installed, set it as default and reboot your Pi.
+4. Once OpenELEC has booted, go to the rightmost menu (settings) and select the OpenELEC submenu, configuring as follows
 5. SYSTEM - turn on automatic update
 6. NETWORK - turn on WLAN and wlan0 for wi-fi (or leave it as eth0 for ethernet) and configure a static IP for your Pi and set it under network settings. Set your router as gateway and primary DNS, 8.8.8.8 as secondary DNS, and 8.8.4.4 as teritary DNS. Fill in the SSID, security method (usually WPA2), and password
 7. SERVICES - turn on samba, start ssh at boot, start crond at boot

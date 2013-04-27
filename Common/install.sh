@@ -7,10 +7,10 @@
 #  Raspi-config homepage: https://github.com/NathanSDunn/Raspi-Shell
 sudo chmod 775 *.sh
 #TODO checks for last update/upgrade
-#sudo apt-get update
-#sudo apt-get upgrade -y
+sudo apt-get update
+sudo apt-get upgrade -y
 sudo apt-get install -y git-core git gitk dialog locate ntpdate
-
+sudo apt-get autoclean
 #update locate search database
 #sudo updatedb
 

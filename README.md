@@ -5,14 +5,14 @@ Follow the instructions in the README.md file appropriate for your distro/image
 
 ### Recommended Images
 #### Desktop Linux / general 
-* Raspbian - A very quick, lean, and user friendly distribution for this purpose and supports many common things you will need out of the box.
+* [Raspbian](http://www.raspbian.org/) - A very quick, lean, and user friendly GNU/Linux desktop environment optimised for the Raspberry Pi hardware.
 
 #### XBMC/Media Centre
-* OpenELEC - A very clean, intuitive image. However at present it seems to drop network connections randomly, requiring a reboot (Unacceptable for an always on media centre. Am working on a fix for this.)
-* RaspBMC - A media centre developed specifically for the Raspberry Pi
+* [RaspBMC](http://www.raspbmc.com/) - An XBMC media centre developed specifically for the Raspberry Pi. Can be installed by writing a pre-prepared image to an SD card or as a network install. It also automatically upgrades itself on boot as new updates become available. 
+* [OpenELEC](http://openelec.tv/) - A very clean, easy to install (via [BerryBoot](http://www.berryterminal.com/doku.php/berryboot)) intuitive distribution. Seems to run [slightly quicker](http://www.youtube.com/watch?v=bYfU7v_FO6U) than RaspBMC for most operations but wi-fi seems to randomly drop out and become unavailable until reboot.
 
 #### Emulation/Gaming
-* Chameleon - supposed to be great for this however have not yet tested.
+* [ChameleonPi](http://chameleon.enging.com/) - supposed to be great for this however have not yet tested.
 
 ##Set up your windows machine to remotely connect to your pi
 1. [Download](http://the.earth.li/~sgtatham/putty/latest/x86/putty-0.62-installer.exe) and install [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
