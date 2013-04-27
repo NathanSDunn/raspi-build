@@ -1,4 +1,5 @@
-#Raspi-Shell
+#raspi-build
+This is a collection of scripts to download, configure, and build scripts, sources, and files for a variety of Raspberry Pi configurations
 
 ##Raspberry Pi Quickstart installation
 Follow the instructions in the README.md file appropriate for your distro/image
