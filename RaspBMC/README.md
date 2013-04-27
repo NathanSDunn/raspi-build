@@ -14,6 +14,7 @@
      `username:pi` and
      `password:raspberry`
 
+10. The first time you SSH in RaspBMC will ask you to set your local - I recommend NOT selecting 'all locales' - takes ages install them all and wastes space on your Pi.
 10. Note: You can also connect to your Pi over the windows network by typing `\\[Your Pi's IP Address]\` into the explorer bar.
 
 ##Set up your windows machine to remotely connect to your pi
