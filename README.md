@@ -10,7 +10,7 @@ Follow the instructions in the README.md file appropriate for your distro/image
 
 #### XBMC/Media Centre
 * [RaspBMC](http://www.raspbmc.com/) - An XBMC media centre based on [Raspbian](http://www.raspbian.org/) and developed specifically for the Raspberry Pi. Can be installed by writing a pre-prepared image to an SD card or as a network install. It also automatically upgrades itself on boot as new updates become available. 
-* [OpenELEC](http://openelec.tv/) - A very clean, easy to install (via [BerryBoot](http://www.berryterminal.com/doku.php/berryboot)) intuitive distribution. Seems to run [slightly quicker](http://www.youtube.com/watch?v=bYfU7v_FO6U) than RaspBMC for most operations but wi-fi seems to randomly drop out and become unavailable until reboot.
+* [OpenELEC](http://openelec.tv/) - A very clean, easy to install (via [BerryBoot](http://www.berryterminal.com/doku.php/berryboot)) intuitive distribution. Seems to run [slightly quicker](http://www.youtube.com/watch?v=bYfU7v_FO6U) than RaspBMC for most operations but wi-fi seems to randomly drop out and become unavailable until reboot. There is a [script available to auto-reconnect](https://github.com/meinside/raspiconfigs/blob/master/cron/wlan_check.sh) that you may want to take a look at if this is an issue.
 
 #### Emulation/Gaming
 * [ChameleonPi](http://chameleon.enging.com/) - supposed to be great for this however have not yet tested.
@@ -40,6 +40,7 @@ The `./XBMC.sh` script will download and configure python, SickBeard (Pirate Bay
 * Movies can be managed with [Couch Potato](https://github.com/RuudBurger/CouchPotatoServer)
 * uTorrent can be used to tie the lot in together and automatically download your favorite shows
 * SpotiMC can be used to stream your music from the cloud 320kbps in mp3 audio with a premium account or alternatively GrooveShark if you prefer a free, but less awesome client. (both are XBMC addons).
+* [Automount new drives](https://github.com/kopfkino/raspi-config) when added and search with SickBeard/Couch Potato
 
 #### Web interfaces
 * Sickbeard http://`[Your Pi's IP Address]`:8081
@@ -73,7 +74,10 @@ You can get a much faster performance by overclocking your Pi. This can be done 
 That being said, your mileage may vary and not all Pi's are built equal. You can experiment with your own overclock settings to come up with a stability, speed, and reliability factor to your liking.
 
 ### Decoding MPEG-2 and VC-1 media formats
-In order to minimise costs, stock standard Raspberry Pi's are not licensed to decode MPEG-2 or VC-1 media formats. However, if you would like to be able to work with these files you can purchase a license for [MPEG-2](http://www.raspberrypi.com/mpeg-2-license-key/) or [VC-1](http://www.raspberrypi.com/vc-1-license-key/) decoding ability, which will be associated with your Pi's serial number.
+In order to minimise costs, stock standard Raspberry Pi's are not licensed to decode MPEG-2 or VC-1 media formats. However, if you would like to be able to work with these files you can purchase a license for [MPEG-2](http://www.raspberrypi.com/mpeg-2-license-key/)(£2.00) or [VC-1](http://www.raspberrypi.com/vc-1-license-key/)(£1.00) decoding ability, which will be associated with your Pi's serial number. Once you have your keys you can add them to config.txt. For example if your key is `0x12345678` you will need to add:
+
+    decode_MPG2=0x12345678
+    decode_WVC1=0x12345678
 
 ### Backing up
 [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) can be used both to `write` pre-built images to an SD card, or `read` an SD card to create your own pre-built image from an existing filesystem. It is strongly advised to back up your SD card once you are happy with your configuration, which will allow your to re-image the card should it become corrupted (or if you want to replicate your setup on another Pi.)
