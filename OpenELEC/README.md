@@ -1,17 +1,6 @@
 #Raspi-Shell
 
 ##Raspberry Pi Quickstart installation
-###Raspbian desktop linux machine (Windows)
-1. Download the most recent Raspbian image from [RaspberryPi.org](http://www.raspberrypi.org/downloads) for a desktop PC config
-2. Use [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) to install the image to a SanDisk 2,4,8, or 16 GB Flash card (Class 6 SDHC recommended for higher random read/write speeds and compatibility - see [this article](http://www.ardamis.com/2012/07/18/finding-a-fast-sd-card-for-the-raspberry-pi/) on Raspi SD card [benchmarks](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=63&t=4076&start=75))
-3. Insert the card into your Pi, connect it to your TV or monitor via HDMI, plug in a keyboard, connect it to the internet via ethernet or a wi-fi dongle, and boot it up. *Note: for maximum performance you should connect any USB devices to your Pi via a powered USB hub.*
-4. Log in with 
-
-    `username:pi` and
-    `password:raspberry`
-
-5. Use the install interface to turn on `ssh`, `expand_rootfs`, and turn off `boot_behaviour` show desktop on boot (select no - dont worry you can boot into the gui by typing `startx` later if you want to use it directly)
-6. Run `ifconfig` on your pi to get the IP (something like `inet addr:192.168.1.220`) and MAC address (something like `HWaddr 00:14:6c:61:37:61`) assigned to your network interface (`eth0` for ethernet, `wlan0` for wi-fi). You can then ssh to your pi by connecting to it's IP address on your local network, or better yet setting a static IP in your router to assign an IP of your choice  
 
 ###OpenELEC XBMC/HTPC personal media centre (Windows)
 1. Download the most recent OpenELEC image from [OpenELEC](http://openelec.tv/get-openelec/download/viewcategory/10-raspberry-pi-builds) or an XBMC media centre
@@ -51,6 +40,8 @@ The `./install.sh` script will load your Pi with a few handy tools useful for wo
 ### XBMC/HTPC (Use the OpenELEC image)
 The `./XBMC.sh` script will download and configure python, SickBeard (Pirate Bay), Couch Potato, uTorrent, SpotiMC, GrooveShark, and the Metropolis Skin for your viewing pleasure. Logins for their web interfaces will be set to `username:root` `password:openelec`
 
+* Install some patch to fix network dropout issues
+* Overclock the Pi
 * Install Python (apt-get)
 * TV shows can be managed with [SickBeard](http://sickbeard.com/), which can also be configured to work with .torrents with [this guide](http://htpc.blogg.no/1319145977_sickbeared__torrents_.html) or alternatively  using the [PirateBay version](https://github.com/mr-orange/Sick-Beard) with [this guide](http://sickbeard.com/forums/viewtopic.php?f=9&t=6605).
 * Movies can be managed with [Couch Potato](https://github.com/RuudBurger/CouchPotatoServer)
