@@ -6,7 +6,11 @@
 # 
 #  raspi-build homepage: https://github.com/NathanSDunn/raspi-build
 sudo chmod +x *.sh	
-sudo chmod +x *./Raspbian/sh
-./Raspbian/install.sh
-./common/XBMC/install.sh
 
+#run Raspbian install scripts
+sudo chmod +x ./Raspbian/*.sh
+./Raspbian/install.sh
+
+#run XBMC install scripts
+sudo chmod +x ../common/XBMC/*.sh
+../common/XBMC/install.sh

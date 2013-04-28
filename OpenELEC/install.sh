@@ -6,8 +6,8 @@
 # 
 #  raspi-build homepage: https://github.com/NathanSDunn/raspi-build
 sudo chmod +x *.sh	
-sudo chmod +x *./Raspbian/sh
-./Raspbian/install.sh
+sudo chmod +x ../common/XBMC/*.sh
+../common/XBMC/install.sh
 
 #Note overclock is managed by core - super is
 #/boot/config.txt
