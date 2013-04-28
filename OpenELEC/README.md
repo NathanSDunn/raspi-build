@@ -14,8 +14,8 @@
      `username:root` and
      `password:openelec`
 
-9. Note: You can also connect to your Pi over the windows network by typing `\\[Your Pi's IP Address]\` into the explorer bar.
-
+9. Note: You can also connect to your Pi over the windows network by typing `\\<Your Pi's IP Address]>` into the explorer bar.
+10. If you are using BerryBoot you can install additional images\boot options by copying the image to `\\<Your Pi's IP Address>\Media\berryboot\images\`.
 ##Set up your windows machine to remotely connect to your pi
 1. [Download](http://the.earth.li/~sgtatham/putty/latest/x86/putty-0.62-installer.exe) and install [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
 2. [Download](http://sourceforge.net/projects/xming/files/latest/download) and install [Xming](http://www.straightrunning.com/XmingNotes/)
