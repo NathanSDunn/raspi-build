@@ -10,7 +10,8 @@ Follow the instructions in the README.md file appropriate for your distro/image
 
 #### XBMC/Media Centre
 * [RaspBMC](http://www.raspbmc.com/) - An XBMC media centre based on [Raspbian](http://www.raspbian.org/) and developed specifically for the Raspberry Pi. Can be installed by writing a pre-prepared image to an SD card or as a network install. It also automatically upgrades itself on boot as new updates become available. 
-* [OpenELEC](http://openelec.tv/) - A very clean, easy to install (via [BerryBoot](http://www.berryterminal.com/doku.php/berryboot)) intuitive distribution. Seems to run [slightly quicker](http://www.youtube.com/watch?v=bYfU7v_FO6U) than RaspBMC for most operations but wi-fi seems to randomly drop out and become unavailable until reboot. There is a [script available to auto-reconnect](https://github.com/meinside/raspiconfigs/blob/master/cron/wlan_check.sh) that you may want to take a look at if this is an issue.
+* [OpenELEC](http://openelec.tv/) - A very clean, easy to install (via [BerryBoot](http://www.berryterminal.com/doku.php/berryboot)) intuitive distribution. Seems to run [slightly quicker](http://www.youtube.com/watch?v=bYfU7v_FO6U) than RaspBMC for most operations.
+* *Note: Both of these images seem to randomly drop wi-fi connections until rebooted at times. Might just be my wi-fi dongle but there is a [script available to auto-reconnect](https://github.com/meinside/raspiconfigs/blob/master/cron/wlan_check.sh) that you may want to take a look at if this is an issue.*
 
 #### Emulation/Gaming
 * [ChameleonPi](http://chameleon.enging.com/) - supposed to be great for this however have not yet tested.
