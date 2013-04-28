@@ -5,10 +5,6 @@
 #  (c) Copyright 2013  Nathan Dunn (nathan.dunn@UNSWalumni.com)
 # 
 #  raspi-build homepage: https://github.com/NathanSDunn/raspi-build
-
-git clone --depth=0 https://github.com/Bioshox/Raspcontrol.git
-cd  Raspcontrol
-chmod +x ./start.sh
-cd ..
-
-%SN Season %0S/%SN S%0S.E%0E - %EN - %Q.N
+sudo chmod 775 *.sh	
+sudo chmod 775 *./Raspbian/sh
+./Raspbian/install.sh

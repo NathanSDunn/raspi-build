@@ -6,9 +6,4 @@
 # 
 #  raspi-build homepage: https://github.com/NathanSDunn/raspi-build
 
-git clone --depth=0 https://github.com/Bioshox/Raspcontrol.git
-cd  Raspcontrol
-chmod +x ./start.sh
-cd ..
-
-%SN Season %0S/%SN S%0S.E%0E - %EN - %Q.N
+#TODO compile scripts to /usr/bin/raspi-build

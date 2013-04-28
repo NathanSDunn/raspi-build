@@ -11,8 +11,9 @@ sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install -y git-core git gitk dialog locate ntpdate
 sudo apt-get autoclean
+
 #update locate search database
-#sudo updatedb
+sudo updatedb
 
 #update time settings
 sudo ntpdate -u ntp.ubuntu.com
@@ -21,10 +22,12 @@ sudo ntpdate -u ntp.ubuntu.com
 sudo apt-get install ca-certificates
 
 # Hexxeh Firmware updates
+# TODO check if file exists
 sudo wget http://goo.gl/1BOfJ -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
 sudo rpi-update
 
-#create a public/private rsa key pair
-#@todo check if file exists
-#mkdir ~/.ssh
-#ssh-keygen -f ~/.ssh/id_rsa
+# create a public/private rsa key pair
+# TODO check if file exists
+# mkdir ~/.ssh
+# ssh-keygen -f ~/.ssh/id_rsa
+# TODO import public keys/authorized_keys
