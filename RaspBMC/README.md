@@ -12,8 +12,11 @@
      `username:pi` and
      `password:raspberry`
 
-10. The first time you SSH in RaspBMC will ask you to set your local - I recommend NOT selecting 'all locales' - takes ages install them all and wastes space on your Pi.
-10. Note: You can also connect to your Pi over the windows network by typing `\\[Your Pi's IP Address]\` into the explorer bar.
+10. The first time you SSH in RaspBMC will ask you to set your locale - I recommend NOT selecting 'all locales' - takes ages install them all and wastes space on your Pi.
+10. Note: You can also connect to your Pi over the windows network by typing `\\[Your Pi's IP Address]\` into the explorer bar. If samba is enabled you will see two directories by default
+* devices - assuming this points to `/media/`
+* pi - points to `/home/pi/`
+
 
 ##Set up your windows machine to remotely connect to your pi
 1. [Download](http://the.earth.li/~sgtatham/putty/latest/x86/putty-0.62-installer.exe) and install [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
