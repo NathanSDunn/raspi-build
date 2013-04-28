@@ -26,14 +26,14 @@ Follow the instructions in the README.md file appropriate for your distro/image
 ##Shell scripts for configuring the RaspberryPi
 
 ### General install/setup
-The `./install.sh` script will load your Pi with a few handy tools useful for working with the other scripts, update your firmware, and create an RSA key pair for connecting to other machines. It can be run by entering the following commands.
+The `./common/install.sh` script will load your Pi with a few handy tools useful for working with the other scripts, update your firmware, and create an RSA key pair for connecting to other machines. It can be run by entering the following commands.
 
     sudo apt-get install -y git-core
     git clone --depth=0 https://github.com/NathanSDunn/Raspi-Shell.git
-    ./install.sh
+    ./common/install.sh
 
 ### XBMC/HTPC (Use the RaspBMC or OpenELEC image) - TODO
-The `./XBMC.sh` script will download and configure python, SickBeard (Pirate Bay), Couch Potato, uTorrent, SpotiMC, GrooveShark, and the Metropolis Skin for your viewing pleasure. Logins for their web interfaces will be set to `username:root` `password:openelec`
+The `./common/XBMC.sh` script will download and configure python, SickBeard (Pirate Bay), Couch Potato, uTorrent, SpotiMC, GrooveShark, and the Metropolis Skin for your viewing pleasure. Logins for their web interfaces will be set to `username:root` `password:openelec`
 
 * Install Python (apt-get)
 * TV shows can be managed with [SickBeard](http://sickbeard.com/), which can also be configured to work with .torrents with [this guide](http://htpc.blogg.no/1319145977_sickbeared__torrents_.html) or alternatively  using the [PirateBay version](https://github.com/mr-orange/Sick-Beard) with [this guide](http://sickbeard.com/forums/viewtopic.php?f=9&t=6605).
@@ -48,7 +48,7 @@ The `./XBMC.sh` script will download and configure python, SickBeard (Pirate Bay
 * Couch Potato http://`[Your Pi's IP Address]`:5050
 
 ### Emulation
-Run the script with `./emulation.sh` to set up RetroPie
+Run the script with `./common/emulation.sh` to set up RetroPie
 
 ## General Notes
 ### Power supplies
