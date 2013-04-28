@@ -10,5 +10,3 @@ git clone --depth=0 https://github.com/Bioshox/Raspcontrol.git
 cd  Raspcontrol
 chmod +x ./start.sh
 cd ..
-
-%SN Season %0S/%SN S%0S.E%0E - %EN - %Q.N

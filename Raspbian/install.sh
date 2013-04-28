@@ -5,11 +5,13 @@
 #  (c) Copyright 2013  Nathan Dunn (nathan.dunn@UNSWalumni.com)
 # 
 #  raspi-build homepage: https://github.com/NathanSDunn/raspi-build
-sudo chmod 775 *.sh
+sudo chmod +x *.sh
 #TODO checks for last update/upgrade
+#TODO export raspi-build directory
+#TODO improve UI
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y git-core git gitk dialog locate ntpdate
+sudo apt-get install -y git dialog locate ntpdate
 sudo apt-get autoclean
 
 #update locate search database
@@ -31,3 +33,5 @@ sudo rpi-update
 # mkdir ~/.ssh
 # ssh-keygen -f ~/.ssh/id_rsa
 # TODO import public keys/authorized_keys
+
+# TODO create daily cronjobs for updatedb, firmware updates, apt-get updates, raspi-build updates
