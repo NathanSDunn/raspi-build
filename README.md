@@ -60,7 +60,7 @@ For best results power your Pi with one of the new iPad 4 USB power supplies (2.
 ### SD cards
 Whilst class 10 cards are quick and reliable for large sequential writes performed by digital cameras and video recorders, many have incredibly slow random read/write access (which is important for database queries and OS performance on a Pi). 
 
-Class 6 SDHC SanDisk cards have been proven to have very good random read/write speeds and compatibility with the Pi (although the Ultra and Extreme models can sometimes be too fast for the little Pi's bus to handle. See [this article](http://www.ardamis.com/2012/07/18/finding-a-fast-sd-card-for-the-raspberry-pi/) on Raspi SD card [benchmarks](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=63&t=4076&start=75)) for further information.
+Class 6 SDHC SanDisk cards have been proven to have very good random read/write speeds and compatibility with the Pi (although the Ultra and Extreme models can sometimes be too fast for the little Pi's bus to handle). See [this article](http://www.ardamis.com/2012/07/18/finding-a-fast-sd-card-for-the-raspberry-pi/) on Raspi SD card [benchmarks](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=63&t=4076&start=75) for further information.
 
 ### Overclocking
 You can get a much faster performance by overclocking your Pi. This can be done through Raspbian's `raspi-config` tool. Or by manually editing `config.txt` in the root directory. *Buyer beware: some of the higher clock speeds and `over_voltage` settings can cause SD card corruption, and setting `over_voltage` > 6 will void your warranty.* The settings I prefer are:
