@@ -16,6 +16,9 @@ Follow the instructions in the README.md file appropriate for your distro/image
 #### Emulation/Gaming
 * [ChameleonPi](http://chameleon.enging.com/) - supposed to be great for this however have not yet tested.
 
+#### Multi-boot
+* [BerryBoot](http://www.berryterminal.com/doku.php/berryboot) will allow you to boot multiple distributions from a single SD card. It supports Raspbian and OpenELEC out of the box as a network install and additional images can be added by copying them to `\images\` in BerryBoot's linux partition, or over a windows network using OpenELEC as outlined in point .10 [here](https://github.com/NathanSDunn/raspi-build/tree/master/OpenELEC#quickstart-installation-windows)
+
 ##Set up your windows machine to remotely connect to your pi
 1. [Download](http://the.earth.li/~sgtatham/putty/latest/x86/putty-0.62-installer.exe) and install [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
 2. [Download](http://sourceforge.net/projects/xming/files/latest/download) and install [Xming](http://www.straightrunning.com/XmingNotes/)
@@ -23,9 +26,6 @@ Follow the instructions in the README.md file appropriate for your distro/image
 4. Set up X11 forwarding in PuTTY by following [this guide](http://www.math.umn.edu/systems_guide/putty_xwin32.html).
 5. Save your connection profile and "Open" the connection
 6. *Optionally* start the Raspbian window manager with `lxsession` once logged in to your Pi.
-
-#### Multi-boot
-* [BerryBoot](http://www.berryterminal.com/doku.php/berryboot) will allow you to boot multiple distributions from a single SD card. It supports Raspbian and OpenELEC out of the box as a network install and additional images can be added by copying them to `\images\` in BerryBoot's linux partition, or over a windows network using OpenELEC as outlined in point .10 [here](https://github.com/NathanSDunn/raspi-build/tree/master/OpenELEC#quickstart-installation-windows)
 
 ##Shell scripts for configuring the RaspberryPi
 
