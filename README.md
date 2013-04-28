@@ -24,6 +24,9 @@ Follow the instructions in the README.md file appropriate for your distro/image
 5. Save your connection profile and "Open" the connection
 6. *Optionally* start the Raspbian window manager with `lxsession` once logged in to your Pi.
 
+#### Multi-boot
+* [BerryBoot](http://www.berryterminal.com/doku.php/berryboot) will allow you to boot multiple distributions from a single SD card. It supports Raspbian and OpenELEC out of the box as a network install and additional images can be added by copying them to `\images\` in BerryBoot's linux partition, or over a windows network using OpenELEC as outlined in point .10 [here](https://github.com/NathanSDunn/raspi-build/tree/master/OpenELEC#quickstart-installation-windows)
+
 ##Shell scripts for configuring the RaspberryPi
 
 ### General install/setup
