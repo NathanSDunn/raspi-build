@@ -18,3 +18,7 @@ git clone --depth=0 git://github.com/bag-man/pistress.git
 cd pistress
 gcc pistress.c
 cd ..
+
+# see http://elinux.org/RPi_Performance
+
+# benchmark SD card, CPU, OS, etc.

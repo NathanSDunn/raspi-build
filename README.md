@@ -65,6 +65,8 @@ Whilst class 10 cards are quick and reliable for large sequential writes perform
 
 Class 6 SDHC SanDisk cards have been proven to have very good random read/write speeds and compatibility with the Pi (although the Ultra and Extreme models can sometimes be too fast for the little Pi's bus to handle). See [this article](http://www.ardamis.com/2012/07/18/finding-a-fast-sd-card-for-the-raspberry-pi/) on Raspi SD card [benchmarks](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=63&t=4076&start=75) for further information.
 
+However, Class 6 and 10 cards may be [more likely to become corrupted](http://elinux.org/index.php?title=RPiconfig&section=14%7CSD#SD_Card_Usage_with_Overclocking) when overclocking. If you are overclocking your Pi, a class 4 card may be a better option.
+
 ### Overclocking
 You can get a much faster performance by overclocking your Pi. This can be done through Raspbian's `raspi-config` tool. Or by manually editing `config.txt` in the root directory. *Buyer beware: some of the higher clock speeds and `over_voltage` settings can cause SD card corruption, and setting `over_voltage` > 6 will void your warranty.* The settings I prefer are:
 

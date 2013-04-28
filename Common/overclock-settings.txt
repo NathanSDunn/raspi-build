@@ -1,7 +1,0 @@
-gpu_freq=250
-core_freq=500
-arm_freq=1000
-sdram_freq=600
-gpu_mem=128
-over_voltage=6
-force_turbo=0

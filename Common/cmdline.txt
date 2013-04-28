@@ -1,0 +1,18 @@
+#need for CMA to work (http://elinux.org/RPiconfig#CMA_-_Dynamic_Memory_Split)
+coherent_pool=6M smsc95xx.turbo_mode=N
+
+#openelec default
+smsc95xx.turbo_mode=N elevator=deadline quiet bootmenutimeout=10 datadev=mmcblk0p2
+
+#openelec hybrid
+coherent_pool=6M smsc95xx.turbo_mode=N elevator=deadline quiet bootmenutimeout=10 datadev=mmcblk0p2
+
+#raspbmc default
+dwc_otg.lpm_enable=0 root=/dev/mmcblk0p2 rootfstype=ext4 noatime quiet rootwait loglevel=1 zram.num_devices=2
+
+#raspbmc hybrid
+coherent_pool=6M smsc95xx.turbo_mode=N dwc_otg.lpm_enable=0 root=/dev/mmcblk0p2 rootfstype=ext4 noatime quiet rootwait loglevel=1 zram.num_devices=2 
+
+#Notes
+#smsc95xx.turbo_mode=N is a network stability profile (http://elinux.org/R-Pi_Troubleshooting#Crashes_occur_with_high_network_load)
+

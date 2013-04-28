@@ -1,0 +1,34 @@
+#old overclock settings
+#gpu_freq=250
+#core_freq=500
+#arm_freq=1000
+#sdram_freq=600
+#gpu_mem=128
+#over_voltage=6
+#force_turbo=0
+
+#codec licenses
+decode_MPG2=0x637f25f
+decode_WVC1=0x903bd43d
+
+#per-pi memory
+gpu_mem_256=128
+#not sure here?
+gpu_mem_512=256
+
+#memsplit
+cma_lwm=16
+cma_hwm=32
+cma_offline_start=16
+
+# Berryboot settings, do not change
+kernel=kernel_rpi_aufs.img
+initramfs berryboot.img
+
+#overclocking
+arm_freq=950
+core_freq=450
+isp_freq=450
+sdram_freq=450
+over_voltage=6
+disable_overscan=0

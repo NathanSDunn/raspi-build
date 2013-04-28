@@ -8,3 +8,5 @@
 sudo chmod +x *.sh	
 sudo chmod +x *./Raspbian/sh
 ./Raspbian/install.sh
+./common/XBMC/install.sh
+
