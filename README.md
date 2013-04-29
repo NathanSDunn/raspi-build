@@ -13,6 +13,12 @@ Follow the instructions in the README.md file appropriate for your distro/image
 * [OpenELEC](http://openelec.tv/) - A very clean, easy to install (via [BerryBoot](http://www.berryterminal.com/doku.php/berryboot)) intuitive distribution built from scratch to run XBMC on a variety of machines. Seems to run [slightly quicker](http://www.youtube.com/watch?v=bYfU7v_FO6U) than RaspBMC for most operations, however does not support apt-get which is used for some of the scripts.
 * *Note: Both of these images seem to randomly drop wi-fi connections until rebooted at times. Might just be my wi-fi dongle but there is a [script available to auto-reconnect](https://github.com/meinside/raspiconfigs/blob/master/cron/wlan_check.sh) that you may want to take a look at if this is an issue.*
 
+##### Installing XBMC addons
+XBMC addons can be installed from existing repositories or zip files through the XBMC interface. Alternatively you can [unzip them to the addons folder](http://forum.xbmc.org/showthread.php?tid=120248) and editing the addon settings directly.
+
+##### Creating your own XMBC addons
+See [XBMCswift](http://www.xbmcswift.com/en/latest/quickstart.html) for a framework to create addons of your own and [XBMC addon development](http://wiki.xbmc.org/index.php?title=Add-on_development) for an expanation of the file system
+
 #### Emulation/Gaming
 * [ChameleonPi](http://chameleon.enging.com/) - supposed to be great for this however have not yet tested.
 
